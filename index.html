@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/gz_2010_us_040_00_500k_0.js"></script><script src="layers/AK_1.js"></script><script src="layers/AL_2.js"></script><script src="layers/AR_3.js"></script><script src="layers/AZ_4.js"></script><script src="layers/CA_5.js"></script><script src="layers/CO_6.js"></script><script src="layers/CT_7.js"></script><script src="layers/DC_8.js"></script><script src="layers/DE_9.js"></script><script src="layers/FL_10.js"></script><script src="layers/GA_11.js"></script><script src="layers/HI_12.js"></script><script src="layers/IA_13.js"></script><script src="layers/ID_14.js"></script><script src="layers/IL_15.js"></script><script src="layers/IN_16.js"></script><script src="layers/KS_17.js"></script><script src="layers/KY_18.js"></script><script src="layers/LA_19.js"></script><script src="layers/MA_20.js"></script><script src="layers/MD_21.js"></script><script src="layers/ME_22.js"></script><script src="layers/MI_23.js"></script><script src="layers/MN_24.js"></script><script src="layers/MO_25.js"></script><script src="layers/MP_26.js"></script><script src="layers/MS_27.js"></script><script src="layers/MT_28.js"></script><script src="layers/NC_29.js"></script><script src="layers/ND_30.js"></script><script src="layers/NE_31.js"></script><script src="layers/NH_32.js"></script><script src="layers/NJ_33.js"></script><script src="layers/NM_34.js"></script><script src="layers/NV_35.js"></script><script src="layers/NY_36.js"></script><script src="layers/OH_37.js"></script><script src="layers/OK_38.js"></script><script src="layers/OR_39.js"></script><script src="layers/PA_40.js"></script><script src="layers/PR_41.js"></script><script src="layers/RI_42.js"></script><script src="layers/SC_43.js"></script><script src="layers/SD_44.js"></script><script src="layers/TN_45.js"></script><script src="layers/TX_46.js"></script><script src="layers/UT_47.js"></script><script src="layers/VA_48.js"></script><script src="layers/VI_49.js"></script><script src="layers/VT_50.js"></script><script src="layers/WA_51.js"></script><script src="layers/WI_52.js"></script><script src="layers/WV_53.js"></script><script src="layers/WY_54.js"></script>
+        <script src="styles/gz_2010_us_040_00_500k_0_style.js"></script><script src="styles/AK_1_style.js"></script><script src="styles/AL_2_style.js"></script><script src="styles/AR_3_style.js"></script><script src="styles/AZ_4_style.js"></script><script src="styles/CA_5_style.js"></script><script src="styles/CO_6_style.js"></script><script src="styles/CT_7_style.js"></script><script src="styles/DC_8_style.js"></script><script src="styles/DE_9_style.js"></script><script src="styles/FL_10_style.js"></script><script src="styles/GA_11_style.js"></script><script src="styles/HI_12_style.js"></script><script src="styles/IA_13_style.js"></script><script src="styles/ID_14_style.js"></script><script src="styles/IL_15_style.js"></script><script src="styles/IN_16_style.js"></script><script src="styles/KS_17_style.js"></script><script src="styles/KY_18_style.js"></script><script src="styles/LA_19_style.js"></script><script src="styles/MA_20_style.js"></script><script src="styles/MD_21_style.js"></script><script src="styles/ME_22_style.js"></script><script src="styles/MI_23_style.js"></script><script src="styles/MN_24_style.js"></script><script src="styles/MO_25_style.js"></script><script src="styles/MP_26_style.js"></script><script src="styles/MS_27_style.js"></script><script src="styles/MT_28_style.js"></script><script src="styles/NC_29_style.js"></script><script src="styles/ND_30_style.js"></script><script src="styles/NE_31_style.js"></script><script src="styles/NH_32_style.js"></script><script src="styles/NJ_33_style.js"></script><script src="styles/NM_34_style.js"></script><script src="styles/NV_35_style.js"></script><script src="styles/NY_36_style.js"></script><script src="styles/OH_37_style.js"></script><script src="styles/OK_38_style.js"></script><script src="styles/OR_39_style.js"></script><script src="styles/PA_40_style.js"></script><script src="styles/PR_41_style.js"></script><script src="styles/RI_42_style.js"></script><script src="styles/SC_43_style.js"></script><script src="styles/SD_44_style.js"></script><script src="styles/TN_45_style.js"></script><script src="styles/TX_46_style.js"></script><script src="styles/UT_47_style.js"></script><script src="styles/VA_48_style.js"></script><script src="styles/VI_49_style.js"></script><script src="styles/VT_50_style.js"></script><script src="styles/WA_51_style.js"></script><script src="styles/WI_52_style.js"></script><script src="styles/WV_53_style.js"></script><script src="styles/WY_54_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
